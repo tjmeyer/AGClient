@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0d4c7b95-89bb-414c-90bd-5cdcc1e32af3",
+            "Value": {
+                "id": "182dad61-1ed6-4c72-b785-1d80f715c56b",
+                "resourcePath": "sprites\\sprt_gas_planets_1000x1000\\sprt_gas_planets_1000x1000.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d9b9140-e7e9-403a-8497-1afb6d77a645",
             "Value": {
                 "id": "f47f2179-f0c4-414e-8b4f-932de5f8c65e",
@@ -191,6 +199,14 @@
             }
         },
         {
+            "Key": "3c814cd4-70f1-442e-aff0-d859c9fbb4cf",
+            "Value": {
+                "id": "72fb1abc-a270-4abe-9cd0-73a6a2b80181",
+                "resourcePath": "sprites\\sprt_planets_temperate_1000x1000\\sprt_planets_temperate_1000x1000.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e33db37-cc31-4b1e-b0f9-f2f38930680d",
             "Value": {
                 "id": "586f3483-e8cd-4303-8185-5ac5ed2110f4",
@@ -211,14 +227,6 @@
             "Value": {
                 "id": "278139ca-bfe0-4725-85d2-add4b1617ee6",
                 "resourcePath": "sprites\\sprt_blank\\sprt_blank.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4e91fd9a-7961-404b-959e-6d5797d4a599",
-            "Value": {
-                "id": "b2681082-618a-4680-ac57-268fb9571819",
-                "resourcePath": "sprites\\sprt_space_large\\sprt_space_large.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -287,14 +295,6 @@
             }
         },
         {
-            "Key": "64b7b2b4-322a-448d-80cb-66b345e73633",
-            "Value": {
-                "id": "5ed499a8-e8b4-46ef-b9c3-2a22e6260e1d",
-                "resourcePath": "datafiles_yy\\intro.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "65b2cfea-1b79-454c-9ea5-ac0baf021841",
             "Value": {
                 "id": "2a09120a-5464-4534-96a3-2c09add5e458",
@@ -347,6 +347,14 @@
             "Value": {
                 "id": "87e9a16d-814e-43ff-a115-cf7dbd176139",
                 "resourcePath": "views\\77d821ab-2a75-4a62-a08d-563f61f561f2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "78927cc7-8a94-4d7f-8517-ebdbc980da43",
+            "Value": {
+                "id": "836dc3f9-1293-4205-a856-616c13fc11ae",
+                "resourcePath": "views\\78927cc7-8a94-4d7f-8517-ebdbc980da43.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "a4a28995-4c03-4b32-acb0-314eed5d7fc1",
+            "Value": {
+                "id": "3b066a21-5a08-4efd-8fb5-3337eddea31b",
+                "resourcePath": "sprites\\sprt_planets_rock_1000x1000\\sprt_planets_rock_1000x1000.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4b515d5-90b9-43ed-87bc-e80779056b98",
             "Value": {
                 "id": "c5758445-5a80-48b5-91c0-af5c7fb877ac",
@@ -543,6 +559,22 @@
             }
         },
         {
+            "Key": "b65cb316-ffb1-4cbe-843b-e0cf4766ca01",
+            "Value": {
+                "id": "09f3d5a0-4b81-466f-a216-9657c0d4fbd6",
+                "resourcePath": "sprites\\sprt_tileable_space_1024x1024\\sprt_tileable_space_1024x1024.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b70b1ee8-3a94-403c-a89f-b397bf749a27",
+            "Value": {
+                "id": "b84d4b40-66fd-4ee4-84bc-d00acb8bfd2b",
+                "resourcePath": "views\\b70b1ee8-3a94-403c-a89f-b397bf749a27.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c1d22313-e7db-4894-a8b9-cdcf28c3f123",
             "Value": {
                 "id": "3e396c6f-0b7d-400d-b0ae-00da49b3daa4",
@@ -556,6 +588,14 @@
                 "id": "cb4b231e-b515-4eab-a307-439676a4f3d7",
                 "resourcePath": "sprites\\sprt_button32x128\\sprt_button32x128.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "caca6664-fb45-42e7-acf0-3623c4cafb9e",
+            "Value": {
+                "id": "34566e9c-3226-48e0-a436-b5f04151bc3d",
+                "resourcePath": "views\\caca6664-fb45-42e7-acf0-3623c4cafb9e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -580,6 +620,14 @@
                 "id": "aa524907-af1c-4cdd-9e00-f41cd2cf1349",
                 "resourcePath": "rooms\\rm_system_map\\rm_system_map.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d1c0b51f-ebd5-4efe-ae04-30eac2baf01a",
+            "Value": {
+                "id": "7c5056fd-5437-4705-a340-4d7273ada2ae",
+                "resourcePath": "datafiles_yy\\When the Dawn Comes.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -612,6 +660,22 @@
                 "id": "54d871bd-ee78-4188-8d2f-e97f23ceb298",
                 "resourcePath": "objects\\obj_quit_button\\obj_quit_button.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ec1f9c3d-b1e9-4eae-be07-c92b8af56bcf",
+            "Value": {
+                "id": "91caf089-5712-4cab-8969-79f91c1146df",
+                "resourcePath": "views\\ec1f9c3d-b1e9-4eae-be07-c92b8af56bcf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ee240b08-8d1c-41f8-9373-00c2154912dc",
+            "Value": {
+                "id": "08a0bb11-d3b0-4e07-9eb5-0f17c50a7a51",
+                "resourcePath": "views\\ee240b08-8d1c-41f8-9373-00c2154912dc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

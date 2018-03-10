@@ -3,5 +3,5 @@
 
 if (name == "")
 {
-	name = string(x) + string(y);	
+	name = string(x) + " " + string(y);	
 }

@@ -45,3 +45,7 @@ if(mouse_check_button_released(mb_left))
 	isDragging = false;	
 }
 // END -- drag to move functions
+
+// START -- 2D Parallax Scrolling
+
+// END -- 2D Parallax Scrolling

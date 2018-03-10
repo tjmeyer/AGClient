@@ -12,8 +12,8 @@ if(camera_get_view_height(cam) > minRes)
 
 	// zoom out
 	camera_set_view_size(cam, 
-						camera_get_view_width(cam) * (1 / scale), 
-						camera_get_view_height(cam) * (1 / scale));
+					camera_get_view_width(cam) * (1 / scale), 
+					camera_get_view_height(cam) * (1 / scale));
 
 	// reset to original center
 	camera_set_view_pos(cam, center_x - camera_get_view_width(cam) / 2, center_y - camera_get_view_height(cam) / 2);

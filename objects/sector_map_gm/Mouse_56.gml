@@ -8,9 +8,10 @@ if(instance_exists(obj_sector))
 		mouse_y > sector.y - sector.sprite_height/2 &&
 		mouse_y < sector.y + sector.sprite_height/2)
 	{
-		// send http request
-		var system_factory = room_instance_add(rm_system_map, sector.x, sector.y, system_map_builder);
+		// move to room and set sector to global
 		global.current_sector_name = sector.name;
+		global.current_sector_x = sector.x;
+		global.current_sector_y = sector.y;
 		room_goto(rm_system_map);
 	}
 }
