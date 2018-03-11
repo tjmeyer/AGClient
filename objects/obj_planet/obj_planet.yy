@@ -1,38 +1,18 @@
 {
-    "id": "cbfce20f-15de-4a76-868c-f74c888eb563",
+    "id": "579502b6-d116-4ef7-8e43-8bc944b3aef1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_system",
+    "name": "obj_planet",
     "eventList": [
         {
-            "id": "7df454b7-138c-4e7d-b51f-0b6942a15b70",
+            "id": "e7a5cd1c-3d1a-4dd0-8719-a82f8c132b4c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "cbfce20f-15de-4a76-868c-f74c888eb563"
-        },
-        {
-            "id": "4b7eb1a5-f598-417e-88b7-c0f10d3ad537",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "cbfce20f-15de-4a76-868c-f74c888eb563"
-        },
-        {
-            "id": "e3d24873-36a5-45d5-863c-a02eda636231",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "cbfce20f-15de-4a76-868c-f74c888eb563"
+            "eventtype": 3,
+            "m_owner": "579502b6-d116-4ef7-8e43-8bc944b3aef1"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,7 +33,21 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "6638de25-29d0-4478-9351-330aa0e19189",
+            "id": "8b682634-0d5a-49a4-951a-cb29d8101f61",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "progress",
+            "varType": 0
+        },
+        {
+            "id": "eb7c6153-5791-4da8-a46d-caabc2ee1798",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -67,49 +61,7 @@
             "varType": 2
         },
         {
-            "id": "f9eb6445-5069-450a-ad87-adcbe1a7f987",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "false",
-            "varName": "isMouseOver",
-            "varType": 3
-        },
-        {
-            "id": "85a12815-4350-4cf2-82fb-f83dbeb58f3b",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "revealTimer",
-            "varType": 0
-        },
-        {
-            "id": "0cb00645-35bd-411f-be61-ba351cff0675",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "300000",
-            "varName": "revealTime",
-            "varType": 0
-        },
-        {
-            "id": "4e15639a-9f23-4b1d-9784-cd2de36dcf19",
+            "id": "c9c07951-3eb8-4168-aebe-8be6f9e7ea2f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -123,7 +75,7 @@
             "varType": 1
         },
         {
-            "id": "3c1957cf-80ea-41cc-8270-56badec2bfc8",
+            "id": "1c47c6a3-3d13-4505-af21-6413d36cc55c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -133,11 +85,81 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "bg_index",
+            "varName": "level",
             "varType": 1
+        },
+        {
+            "id": "e3fd7627-3333-4329-be6b-a5e122ee8ed6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "type",
+            "varType": 1
+        },
+        {
+            "id": "55448632-a247-4d9a-b7d2-4dfe8133a578",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "distance",
+            "varType": 0
+        },
+        {
+            "id": "45d7f759-c79b-44f0-809a-6c0944ae2678",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "radius",
+            "varType": 0
+        },
+        {
+            "id": "0e28be3e-4d7a-4f4d-bd62-cf0cffc98f04",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "orbit_speed",
+            "varType": 0
+        },
+        {
+            "id": "cee7be75-8352-4e3d-ba46-7d4ef841da36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "orbit_radius",
+            "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "0189664c-7db7-4f56-b033-61785b284f20",
+    "spriteId": "3c814cd4-70f1-442e-aff0-d859c9fbb4cf",
     "visible": true
 }

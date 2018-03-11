@@ -6,10 +6,11 @@
     "children": [
         "b70b1ee8-3a94-403c-a89f-b397bf749a27",
         "ec1f9c3d-b1e9-4eae-be07-c92b8af56bcf",
-        "78927cc7-8a94-4d7f-8517-ebdbc980da43"
+        "78927cc7-8a94-4d7f-8517-ebdbc980da43",
+        "07318607-501b-4b7f-a4c3-b958479670f6"
     ],
     "filterType": "GMSprite",
-    "folderName": "planets",
+    "folderName": "planets, suns, moons, etc",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

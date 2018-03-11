@@ -1,6 +1,5 @@
-/// @description Draws loading screen until loading is complete and system_map_gm takes over from there
-
-
+/// @description Draws loading screen while providing information on the process.
+// system_gm takes over once isLoading = true
 if(isLoading)
 {
 	draw_set_color(c_black);

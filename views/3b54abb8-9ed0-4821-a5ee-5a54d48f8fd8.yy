@@ -8,7 +8,7 @@
         "47566d60-062d-4635-bc8e-5ccc6f377429"
     ],
     "filterType": "GMSprite",
-    "folderName": "map sprites",
+    "folderName": "map sprites - for zoomed-out maps",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

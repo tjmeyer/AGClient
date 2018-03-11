@@ -2,7 +2,7 @@
     "id": "0d4c7b95-89bb-414c-90bd-5cdcc1e32af3",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprt_gas_planets_1000x1000",
+    "name": "sprt_planets_gas_1000x1000",
     "For3D": false,
     "HTile": false,
     "VTile": false,

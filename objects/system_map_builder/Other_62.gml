@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Retrieves data from Web Service to draw system locations. 
+// Saves critical information like db ids for the systems in each object for when they're clicked later.
 var response = "null";
 
 var key = async_load[? "id"];
@@ -27,6 +27,8 @@ if(key == postid)
 				{
 					system.name = string(object_map[? "name"]);
 				}
+				system.db_id = object_map[? "id"];
+				system.bg_index = object_map[? "image_index"];
 			}
 			isLoading = false;
 		}

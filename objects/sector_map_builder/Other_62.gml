@@ -19,10 +19,12 @@ if(key == postid)
 			for(var i = 0; i < ds_list_size(sector_list); i++)
 			{
 				var coordinate_map = sector_list[| i];
-				instance_create_layer(int64(coordinate_map[? "x"]),
+				var sector = instance_create_layer(int64(coordinate_map[? "x"]),
 										int64(coordinate_map[? "y"]),
 										"Instances",
 										obj_sector);
+				sector.db_id = coordinate_map[? "id"];
+				sector.bg_index = coordinate_map[? "image_index"];
 				
 			}
 			isLoading = false;

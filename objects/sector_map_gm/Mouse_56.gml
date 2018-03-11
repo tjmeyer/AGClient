@@ -8,10 +8,9 @@ if(instance_exists(obj_sector))
 		mouse_y > sector.y - sector.sprite_height/2 &&
 		mouse_y < sector.y + sector.sprite_height/2)
 	{
-		// move to room and set sector to global
-		global.current_sector_name = sector.name;
-		global.current_sector_x = sector.x;
-		global.current_sector_y = sector.y;
+		// move to room and set sector to global for game's global location
+		global.current_sector_db_id = sector.db_id;
+		global.current_sector_bg_index = sector.bg_index;
 		room_goto(rm_system_map);
 	}
 }
