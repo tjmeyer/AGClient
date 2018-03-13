@@ -1,7 +1,7 @@
 /// @description Draws loading screen until loading is complete and system_map_gm takes over from there
 
 
-if(isLoading)
+if(isLoading && isBgLoading)
 {
 	draw_set_color(c_black);
 	draw_set_alpha(.5);

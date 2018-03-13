@@ -25,6 +25,6 @@ if(global.connection_status >= 0)
 	{
 		global.logged_in = false;
 		loginMessage = "Connection Timeout";
-		room_goto(rm_login);
+		logout();
 	}
 }

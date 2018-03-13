@@ -4,6 +4,22 @@ var response = "null";
 
 var key = async_load[? "id"];
 
+if(key == postbg)
+{
+	if(async_load[? "status"] == 0)
+	{
+		loadingText = "Retrieving Background Information";
+		response = json_decode(async_load[? "result"]);
+		var tempList = response[? "default"]; // get single item list
+		if(tempList > -1) // valid list
+		{
+			var image_map = tempList[| 0];
+			layer_background_index(layer_background_get_id("Background"), int64(image_map[? "image_index"]));
+			isBgLoading = false;
+		}
+	}
+}
+
 // check post id for this object to make sure we're getting the correct call-back
 if(key == postid)
 {

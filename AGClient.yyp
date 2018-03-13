@@ -154,7 +154,7 @@
             "Key": "1b79929c-3ecd-4ef0-ac33-3e0fdc348c47",
             "Value": {
                 "id": "6d00af6e-7a99-41a5-bdfa-3b78d0eb1820",
-                "resourcePath": "rooms\\rm_secor_map\\rm_secor_map.yy",
+                "resourcePath": "rooms\\rm_sector_map\\rm_sector_map.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "26ddde82-343b-4d8c-9929-51e9584ad5c3",
+            "Value": {
+                "id": "2916afab-70fd-420e-ad11-dccf6ea57254",
+                "resourcePath": "scripts\\to_home_system\\to_home_system.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "30dacc44-8e46-4d72-8548-2d2fcc277eb0",
             "Value": {
                 "id": "1afe4345-b8b1-4938-8e7b-74a69d1fbae0",
@@ -220,6 +228,14 @@
                 "id": "507be9e7-2118-429a-9410-a8cd5d78197f",
                 "resourcePath": "objects\\obj_textbox\\obj_textbox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3a8cd283-52e8-462a-8b45-f4130d8bdcde",
+            "Value": {
+                "id": "cb09f830-b5e4-4795-a8e1-c0fe748ba8b8",
+                "resourcePath": "views\\3a8cd283-52e8-462a-8b45-f4130d8bdcde.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -647,6 +663,14 @@
             }
         },
         {
+            "Key": "c7c66cfa-888d-4ae7-8971-5d50d0c3f629",
+            "Value": {
+                "id": "7dda307c-af37-482c-b288-0fbb1a6a9cc5",
+                "resourcePath": "scripts\\to_home_sector\\to_home_sector.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c80da68a-9df5-4b8f-8950-89486108f175",
             "Value": {
                 "id": "cb4b231e-b515-4eab-a307-439676a4f3d7",
@@ -679,6 +703,14 @@
             }
         },
         {
+            "Key": "ce42e9d5-c1de-4689-9ecb-9649d819c8aa",
+            "Value": {
+                "id": "08bc9a5c-a085-43f6-8d18-914b7da4e998",
+                "resourcePath": "sprites\\sprt_large_bg\\sprt_large_bg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d17759a4-2e76-472b-b4f7-5507492db4a1",
             "Value": {
                 "id": "aa524907-af1c-4cdd-9e00-f41cd2cf1349",
@@ -692,6 +724,22 @@
                 "id": "7c5056fd-5437-4705-a340-4d7273ada2ae",
                 "resourcePath": "datafiles_yy\\When the Dawn Comes.ogg.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "d4ddb8a0-e97b-4689-bfdd-e461b85a59c2",
+            "Value": {
+                "id": "c966ae7b-7c7d-4cb3-b756-80f59535a1e7",
+                "resourcePath": "scripts\\to_sector_map\\to_sector_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d6153bcc-fcf6-42d3-9ba6-d8f94e501569",
+            "Value": {
+                "id": "5a1e139d-6e34-42f1-8d97-56318fbb9ca8",
+                "resourcePath": "scripts\\logout\\logout.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -761,7 +809,11 @@
     ],
     "script_order": [
         "5c6bf9a7-2546-46af-9a00-6b8aa436da01",
-        "77cedb10-c794-4bbe-a69c-9d1b0bfb2b55"
+        "77cedb10-c794-4bbe-a69c-9d1b0bfb2b55",
+        "d6153bcc-fcf6-42d3-9ba6-d8f94e501569",
+        "d4ddb8a0-e97b-4689-bfdd-e461b85a59c2",
+        "26ddde82-343b-4d8c-9929-51e9584ad5c3",
+        "c7c66cfa-888d-4ae7-8971-5d50d0c3f629"
     ],
     "tutorial": ""
 }

@@ -10,7 +10,6 @@ if(instance_exists(obj_sector))
 	{
 		// move to room and set sector to global for game's global location
 		global.current_sector_db_id = sector.db_id;
-		global.current_sector_bg_index = sector.bg_index;
 		room_goto(rm_system_map);
 	}
 }

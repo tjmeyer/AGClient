@@ -2,7 +2,20 @@
 // You can write your code in this editor
 
 // START -- UI buttons data set
-var buttonNum = 5;
+buttonNum = 5;
+
+// configure buttons
+buttonMap = ds_list_create();
+for(var i = 0; i < buttonNum; i++)
+{
+	ds_list_add(buttonMap, ds_map_create());
+}
+ds_map_add(buttonMap[| 0], "name", "Map");
+ds_map_add(buttonMap[| 0], "action", script_get_name(to_sector_map));
+ds_map_add(buttonMap[| 4], "name", "Logout");
+ds_map_add(buttonMap[| 4], "action", script_get_name(logout));
+
+
 // create a bottom layer of buttons
 var buttonWidth = display_get_gui_width() / buttonNum;
 var buttonHeight = display_get_gui_height() / 15;
@@ -17,3 +30,17 @@ for(var i = 0; i < buttonNum; i++)
 }
 // END -- UI buttons
 
+// Move to center of system
+var cam = view_get_camera(view_current);
+camera_set_view_pos(cam, 
+					room_width / 2  - camera_get_view_width(cam) / 2,
+					room_height / 2 - camera_get_view_height(cam) / 2);
+
+
+// Get initial bg ratio for step process
+// these are basicall conversion units to know how to resize the bg as the view port changes size
+// during zoom-in and zoom-out events. This is only necessary here because parallax scrolling is enabled.
+var bg_layer_id = layer_background_get_id("Background");
+ratio_bg_to_cam_x = (layer_background_get_xscale(bg_layer_id) * sprite_get_width(layer_background_get_sprite(bg_layer_id))) / camera_get_view_width(cam);
+ratio_bg_to_cam_y = (layer_background_get_yscale(bg_layer_id) * sprite_get_height(layer_background_get_sprite(bg_layer_id))) / camera_get_view_height(cam);
+show_debug_message("system_gm created");

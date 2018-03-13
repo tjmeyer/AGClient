@@ -1,5 +1,15 @@
 /// @description Builds packet to request system information from the Server
 var network = global.NETWORK;
+
+if(!instance_exists(system_gm))
+{
+	system_manager = instance_create_layer(0,0,"Instances", system_gm);
+}
+else
+{
+	system_manager = instance_find(system_gm, 0);	
+}
+
 if(global.connection_status >= 0)
 {
 	loadingText = "Queueing Request";

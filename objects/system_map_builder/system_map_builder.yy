@@ -67,6 +67,20 @@
             "varType": 3
         },
         {
+            "id": "580a0c8b-592e-4833-b743-e32c0986690f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "isBgLoading",
+            "varType": 3
+        },
+        {
             "id": "f819669a-8421-409e-87ff-b9291bed08fb",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

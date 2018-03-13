@@ -2,12 +2,13 @@
 // You can write your code in this editor
 
 // START -- drag to move functions
+var cam = view_get_camera(view_current);
 if(isDragging)
 {
-	var cam = view_get_camera(view_current);
 	// check x difference
-	var xDiff = x_dragger - display_mouse_get_x();
-	var yDiff = y_dragger - display_mouse_get_y();
+	var ratio = camera_get_view_width(cam) / 1024;
+	var xDiff = (x_dragger - device_mouse_x_to_gui(0))*ratio;
+	var yDiff = (y_dragger - device_mouse_y_to_gui(0))*ratio;
 	
 	var newX = camera_get_view_x(cam) + xDiff;
 	var newY = camera_get_view_y(cam) + yDiff;
@@ -36,8 +37,8 @@ if(isDragging)
 if(mouse_check_button(mb_left))
 {
 	isDragging = true;
-	x_dragger = display_mouse_get_x();
-	y_dragger = display_mouse_get_y();
+	x_dragger = device_mouse_x_to_gui(0);
+	y_dragger = device_mouse_y_to_gui(0);
 }
 
 if(mouse_check_button_released(mb_left))
@@ -46,6 +47,16 @@ if(mouse_check_button_released(mb_left))
 }
 // END -- drag to move functions
 
-// START -- 2D Parallax Scrolling
+// START -- Remain view in room at all times
 
-// END -- 2D Parallax Scrolling
+if(camera_get_view_width(cam) + camera_get_view_x(cam) > room_width)
+{
+	camera_set_view_pos(cam, room_width - camera_get_view_width(cam), camera_get_view_y(cam));
+}
+
+if(camera_get_view_height(cam) + camera_get_view_y(cam) > room_height)
+{
+	camera_set_view_pos(cam, camera_get_view_x(cam), room_height - camera_get_view_height(cam));
+}
+
+// END -- Kepp view in room at all times

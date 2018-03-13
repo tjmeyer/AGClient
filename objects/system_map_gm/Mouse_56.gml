@@ -9,7 +9,6 @@ if(instance_exists(obj_system))
 		mouse_y < system.y + system.sprite_height/2)
 	{
 		global.current_system_db_id = system.db_id;
-		global.current_system_bg_index = system.bg_index;
 		room_goto(rm_system);
 	}
 }

@@ -6,7 +6,7 @@ var scale  = argument1; // how much to scale the zoom each step in percentage
 var cam = view_get_camera(view_current);
 if(camera_get_view_height(cam) > minRes)
 {
-	// get center of screen
+	// get mouse location
 	var center_x = camera_get_view_x(cam) + camera_get_view_width(cam) / 2;
 	var center_y = camera_get_view_y(cam) + camera_get_view_height(cam) / 2;
 
