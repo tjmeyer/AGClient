@@ -11,5 +11,5 @@ if(get_timer() - lastConnectionCheckTime > connectionTimeOut - 4000000 &&
 	draw_set_font(fnt_monospace_14);
 	draw_set_valign(fa_middle);
 	draw_set_halign(fa_center);
-	draw_text(room_width / 2, room_height / 2, "Connection timeout in:\n" + string(countdown / 1000000) + " seconds");
+	draw_text(display_get_gui_width() / 2, display_get_gui_height() / 2, "Connection timeout in:\n" + string(countdown / 1000000) + " seconds");
 }

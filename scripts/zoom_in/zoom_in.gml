@@ -2,7 +2,7 @@ var minRes = argument0; // maximum resolution in pixels
 var scale  = argument1; // how much to scale the zoom each step in percentage
 // NOTE: the scale is a percentage and is the perfect inverse of zooming out.
 // So a scale of 1.2 (20%) when zooming in will actually be 1/1.2 or about .83.
-
+var zoom_complete = false;
 var cam = view_get_camera(view_current);
 if(camera_get_view_height(cam) > minRes)
 {
@@ -17,4 +17,7 @@ if(camera_get_view_height(cam) > minRes)
 
 	// reset to original center
 	camera_set_view_pos(cam, center_x - camera_get_view_width(cam) / 2, center_y - camera_get_view_height(cam) / 2);
+	zoom_complete = true;
 }
+
+return zoom_complete;

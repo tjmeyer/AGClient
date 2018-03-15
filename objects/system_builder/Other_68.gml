@@ -42,7 +42,6 @@ if (async_load[? "type"] == network_type_data)
 					var planet_inst = instance_create_layer(0,0, "Instances", obj_planet);
 					planet_inst.progress = real(planetObj[? "progress"]);
 					planet_inst.name = planetObj[? "name"];
-					show_debug_message("building planet" + planet_inst.name);
 					planet_inst.db_id = int64(planetObj[? "id"]);
 					planet_inst.level = int64(planetObj[? "level"]);
 					planet_inst.distance = real(planetObj[? "distance"]);
@@ -52,7 +51,7 @@ if (async_load[? "type"] == network_type_data)
 					
 					// set x any y coordinates based on parametric equation of a circle: x = r cos(t), y = r sin(t)
 					planet_inst.orbit_radius = planet_inst.distance * 300; // 300 pixels / 1 AU ?
-					var angle = planet_inst.progress * 4 * pi;
+					var angle = planet_inst.progress * 2 * pi;
 					planet_inst.x = planet_inst.orbit_radius * cos(angle) + room_width / 2;
 					planet_inst.y = planet_inst.orbit_radius * sin(angle) + room_height / 2;
 					
@@ -83,11 +82,22 @@ if (async_load[? "type"] == network_type_data)
 						// assuming earth would be 40x40px in the game
 						planet_inst.image_xscale = 0.04 * (planet_inst.radius / 3959);
 						planet_inst.image_yscale = 0.04 * (planet_inst.radius / 3959);
-						planet_inst.image_angle = angle * (180/(2*pi)) + 90;
+						planet_inst.image_angle = angle * (180/pi) + 90;
 					}
 				}
 			}
 		}
 		isLoading = false;
+		if(instance_exists(system_gm))
+		{
+			// clear our all system_gm's if they exists. They
+			// should not runt their create event until 
+			// the builder has finished loading.
+			for(var i = 0; i < instance_number(system_gm); i++)
+			{
+				instance_destroy(instance_find(system_gm, i));	
+			}
+		}
+		instance_create_layer(0,0, "Instances", system_gm);	
 	}
 }

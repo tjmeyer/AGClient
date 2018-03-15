@@ -14,7 +14,12 @@ for(var i = 0; i < 360; i += (interval*2))
 	
 	draw_set_color(c_white);
 	draw_set_alpha(.5);
-	draw_line_width(start_x, start_y, end_x, end_y, 2);
+	draw_line_width(start_x, start_y, end_x, end_y, 1);
 }
 
+// set x and y based on update progress percentage.
+x = orbit_radius * cos(progress * 2 * pi) + room_width / 2;
+y = orbit_radius * sin(progress * 2 * pi) + room_height / 2;
+image_angle = (progress * 360) - 90;
+event_inherited();
 draw_self();

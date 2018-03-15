@@ -1,6 +1,6 @@
 /// @description map gui elements
 
-// draw first button
+// draw each button
 for(var i = 0; i < ds_list_size(buttonMap); i++)
 {
 	draw_set_font(fnt_monospace_14);
@@ -38,3 +38,5 @@ for(var i = 0; i < ds_list_size(buttonMap); i++)
 				mapping[? "name"]);
 	}
 }
+
+// draw collapse button for planet buttons

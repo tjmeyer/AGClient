@@ -16,7 +16,7 @@ if(instance_exists(client_network) && os_is_network_connected())
 	// reset network if a disconnect occured.
 	if(global.connection_status < 0)
 	{
-		instance_destroy(network);
+		logout();
 		global.NETWORK = instance_create_depth(0, 0 ,0, client_network);
 		network = global.NETWORK;
 	}

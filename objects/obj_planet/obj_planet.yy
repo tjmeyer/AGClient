@@ -27,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "510abf43-31b9-4b5d-a067-946252cb33dd",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -167,6 +167,20 @@
             "value": "0",
             "varName": "orbit_radius",
             "varType": 0
+        },
+        {
+            "id": "3c2bcbb2-4184-4425-879e-e7b9f511d2e5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "get_timer()",
+            "varName": "update_time",
+            "varType": 4
         }
     ],
     "solid": false,
