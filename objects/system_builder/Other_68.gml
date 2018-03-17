@@ -22,14 +22,34 @@ if (async_load[? "type"] == network_type_data)
 			// get star and build it
 			if(ds_map_exists(data_map, "obj_star"))
 			{
+				show_debug_message("Building star:");
 				var star = data_map[? "obj_star"];
 				var star_inst = instance_create_layer(room_width / 2,
 														room_height / 2,
 														"Instances",
 														obj_sun);
 				star_inst.anomaly = int64(star[? "anomaly"]);
+				show_debug_message("\tAnomaly: " + string(star_inst.anomaly));
 				star_inst.radius = real(star[? "radius"]);
-				star_inst.db_id = int64(star[? "id"]);
+				show_debug_message("\tRadius: " + string(star_inst.radius));
+				if(ds_map_exists(star, "id"))
+				{
+					star_inst.db_id = int64(star[? "id"]);
+					show_debug_message("\tDB_ID: " + string(star_inst.db_id));
+				}
+				else
+				{
+					show_debug_message("ERROR: No db_id found for star!!!");
+				}
+				if(ds_map_exists(star, "type"))
+				{
+					star_inst.type = string(star[? "type"]);
+					show_debug_message("\tType: " + string(star_inst.type));
+				}
+				else
+				{
+					show_debug_message("ERROR: No type found for star!!!");
+				}
 			}
 			
 			// build planets

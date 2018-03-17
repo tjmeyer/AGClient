@@ -19,4 +19,3 @@ part_type_blend(part0, 1);
 part_type_life(part0, 1, 10);
 
 part_system_position(ps, x, y);
-part_emitter_stream(ps, emit0, part0, 5);
