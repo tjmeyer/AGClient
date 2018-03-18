@@ -261,6 +261,20 @@
             "value": "fa_center",
             "varName": "text_halign",
             "varType": 4
+        },
+        {
+            "id": "9200ffb1-3103-46dc-a169-383ef9d9b332",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "fnt_monospace_14",
+            "varName": "text_font",
+            "varType": 4
         }
     ],
     "solid": false,

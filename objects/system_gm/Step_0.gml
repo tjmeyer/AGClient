@@ -37,10 +37,3 @@ var bg_moveable_y = room_height - bg_height;
 layer_x("Background", bg_moveable_x * cam_percent_x);
 layer_y("Background", bg_moveable_y * cam_percent_y);
 // END -- Parallax Scrolling
-
-// START -- Background resize check (when zooming in and out, maintain aspect ratio with camera)
-
-// check current ratio against previously recorded one
-
-
-// END -- Background resize check

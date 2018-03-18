@@ -113,6 +113,20 @@
             "value": "false",
             "varName": "isDragging",
             "varType": 3
+        },
+        {
+            "id": "950c195e-91a9-4572-a23b-774294426ad0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "menu_ref",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -34,9 +34,12 @@ if(isDragging)
 	camera_set_view_pos(cam, newX, newY);
 }
 
-if(mouse_check_button(mb_left))
+if(mouse_check_button_pressed(mb_left))
 {
 	isDragging = true;
+}
+if(isDragging)
+{
 	x_dragger = device_mouse_x_to_gui(0);
 	y_dragger = device_mouse_y_to_gui(0);
 }

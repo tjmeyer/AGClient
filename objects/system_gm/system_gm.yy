@@ -33,16 +33,6 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "9cfeaab5-283e-4779-a303-0f4d4beed938"
-        },
-        {
-            "id": "3f482490-fb66-46dc-a3fb-b10bbbe6a04c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 56,
-            "eventtype": 6,
-            "m_owner": "9cfeaab5-283e-4779-a303-0f4d4beed938"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -131,6 +121,62 @@
             "value": "-1",
             "varName": "selected_instance",
             "varType": 1
+        },
+        {
+            "id": "10d0fdb9-c606-4cdc-acc7-58fa235bfdf7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "gui_info_window_left",
+            "varType": 4
+        },
+        {
+            "id": "dbcfbcd1-e260-4bf9-8887-9e3c1d786340",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "display_get_gui_height() * .75",
+            "varName": "gui_info_window_top",
+            "varType": 4
+        },
+        {
+            "id": "ca179fc5-a3a6-4924-9b19-5ec1e5efbdde",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "display_get_gui_width()",
+            "varName": "gui_info_window_right",
+            "varType": 4
+        },
+        {
+            "id": "725b72c1-f24b-42d9-b957-0c5ac81c64f3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "display_get_gui_height()",
+            "varName": "gui_info_window_bottom",
+            "varType": 4
         }
     ],
     "solid": false,

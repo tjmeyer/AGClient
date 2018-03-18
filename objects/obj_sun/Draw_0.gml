@@ -4,16 +4,20 @@ if(first_draw)
 {
 	class = string_char_at(type, 1);
 	first_draw = false;
-	if(class == "O")
+	switch (class)
 	{
-		part_type_color3(part0, 
-						make_color_rgb(0,0,255),
-						make_color_rgb(0,255,255),
-						make_color_rgb(0,64,138));
+		case "O":
+			part_type_color3(part0, 
+							make_color_rgb(0,0,255),
+							make_color_rgb(0,255,255),
+							make_color_rgb(0,64,138));
+			image_blend = make_color_rgb(255,255,255);
+		break;
 	}
 	part_system_update(ps);
 }
 part_emitter_burst(ps, emit0, part0, 5);
-//part_emitter_stream(ps, emit0, part0, 5);
+image_xscale = 1.5;
+image_yscale = 1.5;
 draw_self();
 event_inherited();

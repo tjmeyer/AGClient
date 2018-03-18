@@ -1,34 +1,13 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description UI Elements and general gameplay handling while in a "player system"
 
-// START -- UI buttons data set
-buttonNum = 5;
-
-// configure buttons
-buttonMap = ds_list_create();
-for(var i = 0; i < buttonNum; i++)
+if(!instance_exists(menu_gui))
 {
-	ds_list_add(buttonMap, ds_map_create());
+	menu_ref = instance_create_layer(0,0,"UI",menu_gui);
 }
-ds_map_add(buttonMap[| 0], "name", "Map");
-ds_map_add(buttonMap[| 0], "action", script_get_name(to_sector_map));
-ds_map_add(buttonMap[| 4], "name", "Logout");
-ds_map_add(buttonMap[| 4], "action", script_get_name(logout));
-
-
-// create a bottom layer of buttons
-var buttonWidth = display_get_gui_width() / buttonNum;
-var buttonHeight = display_get_gui_height() / 15;
-
-buttons = array_create(buttonNum, array_create(4)); // 4: left, top, right, bottom
-for(var i = 0; i < buttonNum; i++)
+else
 {
-	buttons[i, 0] = buttonWidth * i; // left
-	buttons[i, 1] = display_get_gui_height() - buttonHeight; // top
-	buttons[i, 2] = buttonWidth * (i + 1); // right
-	buttons[i, 3] = display_get_gui_height(); // bottom
+	menu_ref = instance_find(menu_gui, 0);
 }
-// END -- UI buttons
 
 // Move to center of system
 var cam = view_get_camera(view_current);
@@ -38,13 +17,14 @@ camera_set_view_pos(cam,
 
 
 // Get initial bg ratio for step process
-// these are basicall conversion units to know how to resize the bg as the view port changes size
+// these are basically conversion units to know how to resize the bg as the view port changes size
 // during zoom-in and zoom-out events. This is only necessary here because parallax scrolling is enabled.
 var bg_layer_id = layer_background_get_id("Background");
 ratio_bg_to_cam_x = (layer_background_get_xscale(bg_layer_id) * sprite_get_width(layer_background_get_sprite(bg_layer_id))) / camera_get_view_width(cam);
 ratio_bg_to_cam_y = (layer_background_get_yscale(bg_layer_id) * sprite_get_height(layer_background_get_sprite(bg_layer_id))) / camera_get_view_height(cam);
 show_debug_message("system_gm created");
 
+// START UI BUILD -- see draw gui event for more gui step draw
 // Find all planets and create planet buttons for each
 var button_height_sum = 0;
 for(var i = 0; i < instance_number(obj_planet); i++)

@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(visible)
 {
+	draw_set_font(text_font);
 	draw_set_valign(text_valign);
 	draw_set_halign(text_halign);
 
@@ -26,6 +27,14 @@ if(visible)
 	}
 	draw_rectangle(gui_x, gui_y, gui_x + button_width, gui_y + button_height, false);
 
+	if(sprite_index > -1)
+	{
+		draw_sprite_stretched_ext(sprite_index, image_index, 
+									gui_x - button_width / 2, gui_y - button_height / 2,
+									button_width, button_height,
+									image_blend, border_alpha);	
+	}
+	
 	// border
 	if(border_enabled)
 	{

@@ -1,42 +1,42 @@
 /// @description map gui elements
-
-// draw each button
-for(var i = 0; i < ds_list_size(buttonMap); i++)
-{
-	draw_set_font(fnt_monospace_14);
-	draw_set_valign(fa_middle);
-	draw_set_halign(fa_center);
-	draw_set_alpha(1);
-	draw_set_color(c_blue);
+if(selected_instance > 0)
+{	
+	draw_set_color(c_black);
+	draw_set_alpha(.6);
+	draw_rectangle(gui_info_window_left, 
+					gui_info_window_top, 
+					gui_info_window_right, 
+					gui_info_window_bottom, 
+					false);
+	draw_line_width(gui_info_window_left, gui_info_window_top,
+					gui_info_window_right, gui_info_window_top, 3);
 	
-	var mapping = buttonMap[| i];
-	if(ds_map_exists(mapping, "name"))
+	switch(selected_instance.object_index)
 	{
-		draw_rectangle(buttons[i, 0], buttons[i, 1], buttons[i, 2], buttons[i, 3], true);
+		case obj_planet:
+			// draw planet picture
+			var x_to_y_ratio = selected_instance.sprite_width / selected_instance.sprite_height;
+			var pic_width = 100;
+			var pic_height = 100;
+			var spacer = 5;
+			// draw_sprite_stretched_ext ignores the sprites origin and assumes 0, 0 (top left corner) as origin
+			draw_sprite_stretched_ext(selected_instance.sprite_index, selected_instance.image_index, 
+									gui_info_window_left + spacer + (pic_width / 2) - pic_width / 2,
+									(gui_info_window_top + gui_info_window_bottom) / 2 - pic_height / 2,
+									pic_width, pic_height,
+									c_white, 1);
+			
+			// write info to screen
+			draw_set_color(c_white);
+			draw_set_font(fnt_title_24);
+			draw_set_valign(fa_top);
+			draw_set_halign(fa_center);
+			draw_text((gui_info_window_left + gui_info_window_right) / 2,
+						gui_info_window_top + spacer,
+						selected_instance.name);
+		break;
+		case obj_sun:
 		
-		
-		draw_set_alpha(.3);
-		// highlight mouse-overs
-		if( device_mouse_x_to_gui(0) > buttons[i,0] &&
-			device_mouse_x_to_gui(0) < buttons[i,2] &&
-			device_mouse_y_to_gui(0) > buttons[i,1] &&
-			device_mouse_y_to_gui(0) < buttons[i,3])
-		{
-			// overlay occurs
-			draw_rectangle(buttons[i, 0], buttons[i, 1], buttons[i, 2], buttons[i, 3], false);
-		}
-		else
-		{
-			draw_set_color(c_black);
-			draw_rectangle(buttons[i, 0], buttons[i, 1], buttons[i, 2], buttons[i, 3], false);
-		}
-		
-		draw_set_alpha(1);
-		draw_set_color(c_white);
-		draw_text((buttons[i, 2] + buttons[i, 0]) / 2,
-				(buttons[i, 3] + buttons[i, 1]) / 2,
-				mapping[? "name"]);
+		break;
 	}
 }
-
-// draw collapse button for planet buttons
