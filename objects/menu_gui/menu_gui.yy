@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "make_color_rgb(20, 20, 20)",
+            "value": "make_color_rgb(50,50,50)",
             "varName": "default_bg_color",
             "varType": 4
         },
@@ -76,7 +76,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "make_color_rgb(20, 20, 20)",
+            "value": "make_color_rgb(50,50,50)",
             "varName": "bg_color",
             "varType": 4
         },
@@ -104,7 +104,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": ".8",
             "varName": "bg_alpha",
             "varType": 0
         },

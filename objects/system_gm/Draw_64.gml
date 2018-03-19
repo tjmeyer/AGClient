@@ -31,12 +31,33 @@ if(selected_instance > 0)
 			draw_set_font(fnt_title_24);
 			draw_set_valign(fa_top);
 			draw_set_halign(fa_center);
+			// title
 			draw_text((gui_info_window_left + gui_info_window_right) / 2,
 						gui_info_window_top + spacer,
 						selected_instance.name);
+			
 		break;
 		case obj_sun:
-		
+			var padding = 15;
+			draw_set_color(c_white);
+			draw_set_font(fnt_monospace_14);
+			draw_set_valign(fa_top);
+			draw_set_halign(fa_left);
+			var textHeight = string_height("X");
+			var title = "Class " + string(selected_instance.type) + " Star";			
+			if(selected_instance.anomaly > 0)
+			{
+				title += " - Anomaly Detected";
+			}
+			
+			var radius = "Radius: " + string(selected_instance.radius) + " miles";
+
+			draw_text(gui_info_window_left + padding, 
+						gui_info_window_top + padding, 
+						title);
+			draw_text(gui_info_window_left + padding,
+						gui_info_window_top + padding * 2 + textHeight,
+						radius);
 		break;
 	}
 }

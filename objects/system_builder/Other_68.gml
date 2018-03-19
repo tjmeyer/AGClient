@@ -35,7 +35,6 @@ if (async_load[? "type"] == network_type_data)
 				if(ds_map_exists(star, "id"))
 				{
 					star_inst.db_id = int64(star[? "id"]);
-					show_debug_message("\tDB_ID: " + string(star_inst.db_id));
 				}
 				else
 				{
@@ -44,7 +43,6 @@ if (async_load[? "type"] == network_type_data)
 				if(ds_map_exists(star, "type"))
 				{
 					star_inst.type = string(star[? "type"]);
-					show_debug_message("\tType: " + string(star_inst.type));
 				}
 				else
 				{

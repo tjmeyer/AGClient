@@ -5,12 +5,12 @@
     "name": "obj_menu_research_button",
     "eventList": [
         {
-            "id": "c5f44aa9-d1d7-429e-97e9-98d3b4b7ccc4",
+            "id": "87e6c27b-8d73-4eb4-92e9-00d688140d8f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 53,
+            "enumb": 56,
             "eventtype": 6,
             "m_owner": "ce4ab8d1-ad7d-4aa1-ad1d-631fc5ca1c82"
         }
