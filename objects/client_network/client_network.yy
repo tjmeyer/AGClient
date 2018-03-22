@@ -127,6 +127,20 @@
             "value": "12000000",
             "varName": "connectionTimeOut",
             "varType": 0
+        },
+        {
+            "id": "c8ce0f3e-66a4-45cc-89b9-8a123900043b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "",
+            "varName": "loginMessage",
+            "varType": 2
         }
     ],
     "solid": false,

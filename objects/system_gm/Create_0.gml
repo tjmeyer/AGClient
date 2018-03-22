@@ -1,12 +1,12 @@
 /// @description UI Elements and general gameplay handling while in a "player system"
 
-if(!instance_exists(menu_gui))
+if(!instance_exists(menu_gm))
 {
-	menu_ref = instance_create_layer(0,0,"UI",menu_gui);
+	menu_ref = instance_create_layer(0,0,"UI",menu_gm);
 }
 else
 {
-	menu_ref = instance_find(menu_gui, 0);
+	menu_ref = instance_find(menu_gm, 0);
 }
 
 // Move to center of system

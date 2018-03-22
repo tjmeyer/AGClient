@@ -8,7 +8,6 @@ global.NETWORK = id;
 
 lastConnectionCheckTime = get_timer();
 
-loginMessage = "";
 // constants for packet identification
 // !!!MUST BE THE SAME BETWEEN CLIENT AND SERVER!!!
 LOGIN_REQUEST = 1;
@@ -18,3 +17,5 @@ SYSTEM_MAP = 4;
 UNAUTHORIZED = 5;
 SYSTEM_REQUEST = 6;
 GET_USER_SYSTEM_ID = 7;
+ERROR = 8;
+REGISTRATION_REQUEST = 9;

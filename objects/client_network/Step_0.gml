@@ -25,6 +25,14 @@ if(global.connection_status >= 0)
 	{
 		global.logged_in = false;
 		loginMessage = "Connection Timeout";
-		logout();
+		id.persistent = false;
+		if(room == rm_login)
+		{
+			room_restart();
+		}
+		else
+		{
+			room_goto(rm_login);
+		}
 	}
 }

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Draws selection indicator for selectable items.
 if(isSelected)
 {
 	if(pulse_alpha > pulse_alpha_max)

@@ -121,6 +121,20 @@
             "value": "True",
             "varName": "first_draw",
             "varType": 3
+        },
+        {
+            "id": "18c351c9-3f8e-4223-ab64-53c123e3c111",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "emission_number",
+            "varType": 0
         }
     ],
     "solid": false,

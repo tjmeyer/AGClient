@@ -17,10 +17,3 @@ else
 	var fade_id = layer_background_get_id("FadeAway");
 	layer_background_alpha(fade_id, layer_background_get_alpha(fade_id) - .015);
 }
-
-if(global.logged_in)
-{
-	var buffer = buffer_create(256, buffer_grow, 1);
-	var packet = ds_map_create();
-	ds_map_add(packet, "type", global.NETWORK.SYSTEM_REQUEST);
-}

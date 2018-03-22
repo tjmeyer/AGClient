@@ -32,15 +32,29 @@ if (async_load[? "type"] == network_type_data)
 	case CONNECTION_CHECK:
 		lastConnectionCheckTime = get_timer();
 		break;
+	case REGISTRATION_REQUEST:
+		var success = data[? "username"];
+		if(success)
+		{
+			loginMessage = "Registration Successful.\nLogin to continue.";
+			global.logged_in = true;
+			global.user_id = data[? "user_id"];
+			global.user_system_id = data[? "system_id"];
+			global.user_sector_id = data[? "sector_id"];
+			login();
+		}
+		else
+		{
+			loginMessage = "That username is already taken.";
+		}
+		break;
 	case GET_USER_SYSTEM_ID:
 		if(ds_map_exists(data, "system_id") &&
 			ds_map_exists(data, "sector_id"))
 		{
-			global.current_system_db_id = data[? "system_id"];
 			global.user_system_id = data[? "system_id"];
-			global.current_sector_db_id = data[? "sector_id"];
 			global.user_sector_id = data[? "sector_id"];
-			room_goto(rm_system);
+			to_home_system();
 		}
 		break;
 	}

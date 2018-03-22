@@ -7,3 +7,4 @@ if(room != rm_login)
 {
 	room_goto(rm_login);
 }
+event_inherited();
