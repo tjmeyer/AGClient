@@ -50,6 +50,10 @@ if (async_load[? "type"] == network_type_data)
 					var planet_inst = instance_create_layer(0,0, "Instances", obj_planet);
 					planet_inst.progress = real(planetObj[? "progress"]);
 					planet_inst.name = planetObj[? "name"];
+					if(planet_inst.name == "")
+					{
+						planet_inst.name = "planet " + string(i);	
+					}
 					planet_inst.db_id = int64(planetObj[? "id"]);
 					planet_inst.level = int64(planetObj[? "level"]);
 					planet_inst.distance = real(planetObj[? "distance"]);
@@ -58,7 +62,7 @@ if (async_load[? "type"] == network_type_data)
 					var type = planetObj[? "type"];
 					
 					// set x any y coordinates based on parametric equation of a circle: x = r cos(t), y = r sin(t)
-					planet_inst.orbit_radius = planet_inst.distance * 300; // 300 pixels / 1 AU ?
+					planet_inst.orbit_radius = planet_inst.distance * 100 + sprite_get_width(sprt_sun)/2; // 50 pixels / 1 AU ?
 					var angle = planet_inst.progress * 2 * pi;
 					planet_inst.x = planet_inst.orbit_radius * cos(angle) + room_width / 2;
 					planet_inst.y = planet_inst.orbit_radius * sin(angle) + room_height / 2;
@@ -85,11 +89,11 @@ if (async_load[? "type"] == network_type_data)
 								planet_inst.sprite_index = sprt_planets_rock_1000x1000;
 							break;
 						}
-						planet_inst.image_index = planetObj[? "image_index"];
+						planet_inst.image_index = planetObj[? "sprite_index"];
 						// 0.04 of 1000px = 40px size base. why not! 3959 miles is earth's radius. Using that as a ratio
 						// assuming earth would be 40x40px in the game
-						planet_inst.image_xscale = 0.04 * (planet_inst.radius / 3959);
-						planet_inst.image_yscale = 0.04 * (planet_inst.radius / 3959);
+						planet_inst.image_xscale = 0.005 * (planet_inst.radius / 3959);
+						planet_inst.image_yscale = 0.005 * (planet_inst.radius / 3959);
 						planet_inst.image_angle = angle * (180/pi) + 90;
 					}
 				}

@@ -1,7 +1,7 @@
 /// @description Draws loading screen until loading is complete and system_map_gm takes over from there
 
 
-if(isLoading && isBgLoading)
+if(isLoading || isBgLoading)
 {
 	draw_set_color(c_black);
 	draw_set_alpha(.5);
@@ -12,10 +12,10 @@ if(isLoading && isBgLoading)
 					false);
 	
 	// draw loading sprite
-	draw_sprite(sprt_loading, 0, 
+	sprite_set_speed(sprt_loading, 2, spritespeed_framespersecond);
+	draw_sprite(sprt_loading, -1, 
 				display_get_gui_width() / 2, 
 				display_get_gui_height() / 2);
-	sprite_set_speed(sprt_loading, 15, spritespeed_framespersecond);
 	
 	// draw loading text
 	draw_set_color(c_white);

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Performs the select interface
 var gm = instance_find(system_gm, 0);
 
 // check to make sure mouse clicks do not pass through gui layer

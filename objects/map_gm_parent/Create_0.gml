@@ -2,18 +2,13 @@
 // You can write your code in this editor
 
 // START -- UI buttons data set
-var buttonNum = 5;
-// create a bottom layer of buttons
-var buttonWidth = display_get_gui_width() / buttonNum;
-var buttonHeight = display_get_gui_height() / 15;
-
-buttons = array_create(buttonNum, array_create(4)); // 4: left, top, right, bottom
-for(var i = 0; i < buttonNum; i++)
+if(!instance_exists(menu_gm))
 {
-	buttons[i, 0] = buttonWidth * i; // left
-	buttons[i, 1] = display_get_gui_height() - buttonHeight; // top
-	buttons[i, 2] = buttonWidth * (i + 1); // right
-	buttons[i, 3] = display_get_gui_height(); // bottom
+	menu_ref = instance_create_layer(0,0,"UI",menu_gm);
+}
+else
+{
+	menu_ref = instance_find(menu_gm, 0);
 }
 // END -- UI buttons
 

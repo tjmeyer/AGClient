@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(isLocked)
 {
-	image_index = 1;	
+	image_index = 1;
 }
 else
 {

@@ -12,6 +12,9 @@ if(device_mouse_x_to_gui(0) > menu_left - drag_buffer &&
 		var gm = instance_find(map_gm_parent, 0);
 		gm.isDragging = false;
 		menu_left = device_mouse_x_to_gui(0);
+		ini_open("profile.ini");
+		ini_write_real("Preferences","menu_width",menu_left);
+		ini_close();
 		drag_buffer = 100;
 		if(menu_right - menu_left < menu_min)
 		{

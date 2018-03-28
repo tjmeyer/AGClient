@@ -20,16 +20,16 @@ if(camera_get_view_height(cam) < maxRes)
 		camera_set_view_pos(cam, center_x - camera_get_view_width(cam) / 2, center_y - camera_get_view_height(cam) / 2);
 	}
 
-	// move view to min/max locations
-	if(camera_get_view_x(cam) < 0)
-	{
-		camera_set_view_pos(cam, 0, camera_get_view_y(cam));	
-	}
+	//// move view to min/max locations
+	//if(camera_get_view_x(cam) < 0)
+	//{
+	//	camera_set_view_pos(cam, 0, camera_get_view_y(cam));	
+	//}
 
-	if(camera_get_view_y(cam) < 0)
-	{
-		camera_set_view_pos(cam, camera_get_view_x(cam), 0);	
-	}
+	//if(camera_get_view_y(cam) < 0)
+	//{
+	//	camera_set_view_pos(cam, camera_get_view_x(cam), 0);	
+	//}
 	zoom_success = true;
 }
 

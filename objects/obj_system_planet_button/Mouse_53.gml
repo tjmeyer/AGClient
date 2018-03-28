@@ -10,6 +10,6 @@ if(has_mouse)
 					planet_ref.y - camera_get_view_height(cam) / 2);
 	with(planet_ref)
 	{
-		event_perform(ev_mouse, ev_left_release);	
+		event_perform(ev_mouse, ev_left_press);	
 	}
 }

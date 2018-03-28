@@ -5,7 +5,7 @@
     "name": "obj_menu_to_home_sector_map_button",
     "eventList": [
         {
-            "id": "003dffd4-ab4c-45c9-8166-ac292cfeddbe",
+            "id": "ea4ecf8f-244e-48cf-9dae-b9b4a527911f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -31,7 +31,9 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

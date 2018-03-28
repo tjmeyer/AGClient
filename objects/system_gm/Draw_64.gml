@@ -25,16 +25,28 @@ if(selected_instance > 0)
 									(gui_info_window_top + gui_info_window_bottom) / 2 - pic_height / 2,
 									pic_width, pic_height,
 									c_white, 1);
-			
+			var textLeft = pic_width + gui_info_window_left + spacer * 2;
 			// write info to screen
 			draw_set_color(c_white);
 			draw_set_font(fnt_title_24);
 			draw_set_valign(fa_top);
 			draw_set_halign(fa_center);
-			// title
+			var textY = gui_info_window_top + spacer;
+			// name of planet
 			draw_text((gui_info_window_left + gui_info_window_right) / 2,
-						gui_info_window_top + spacer,
-						selected_instance.name);
+						textY, selected_instance.name);
+			textY += string_height("X");
+			// planet radius
+			draw_set_font(fnt_calibri_12);
+			draw_set_halign(fa_left);
+			draw_text(textLeft, textY, "Radius: " + string(selected_instance.radius) + " miles");
+			textY += string_height("X");
+			// planet distance
+			draw_text(textLeft, textY, "Orbit Distance: " + string(selected_instance.distance) + " AU");
+			textY += string_height("X");
+			// orbit time
+			draw_text(textLeft, textY, "Orbit Period: " + string(selected_instance.orbit_speed / 395.25) + " earth years.");
+			
 			
 		break;
 		case obj_sun:

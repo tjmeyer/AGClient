@@ -12,7 +12,8 @@ if(isLoading)
 					false);
 	
 	// draw loading sprite
-	draw_sprite(sprt_loading, 0, 
+	sprite_set_speed(sprt_loading, 2, spritespeed_framespergameframe);
+	draw_sprite(sprt_loading, -1, 
 				display_get_gui_width() / 2, 
 				display_get_gui_height() / 2);
 	

@@ -13,23 +13,23 @@ if(isDragging)
 	var newX = camera_get_view_x(cam) + xDiff;
 	var newY = camera_get_view_y(cam) + yDiff;
 	
-	if(newX < 0)
-	{
-		newX = 0;
-	}
-	else if(newX + camera_get_view_width(cam) > room_width)
-	{
-		newX = room_width - camera_get_view_width(cam);	
-	}
+	//if(newX < 0)
+	//{
+	//	newX = 0;
+	//}
+	//else if(newX + camera_get_view_width(cam) > room_width)
+	//{
+	//	newX = room_width - camera_get_view_width(cam);	
+	//}
 	
-	if(newY < 0)
-	{
-		newY = 0;
-	}
-	else if(newY + camera_get_view_height(cam) > room_height)
-	{
-		newY = room_height - camera_get_view_height(cam);	
-	}
+	//if(newY < 0)
+	//{
+	//	newY = 0;
+	//}
+	//else if(newY + camera_get_view_height(cam) > room_height)
+	//{
+	//	newY = room_height - camera_get_view_height(cam);	
+	//}
 	
 	camera_set_view_pos(cam, newX, newY);
 }
@@ -52,14 +52,14 @@ if(mouse_check_button_released(mb_left))
 
 // START -- Remain view in room at all times
 
-if(camera_get_view_width(cam) + camera_get_view_x(cam) > room_width)
-{
-	camera_set_view_pos(cam, room_width - camera_get_view_width(cam), camera_get_view_y(cam));
-}
+//if(camera_get_view_width(cam) + camera_get_view_x(cam) > room_width)
+//{
+//	camera_set_view_pos(cam, room_width - camera_get_view_width(cam), camera_get_view_y(cam));
+//}
 
-if(camera_get_view_height(cam) + camera_get_view_y(cam) > room_height)
-{
-	camera_set_view_pos(cam, camera_get_view_x(cam), room_height - camera_get_view_height(cam));
-}
+//if(camera_get_view_height(cam) + camera_get_view_y(cam) > room_height)
+//{
+//	camera_set_view_pos(cam, camera_get_view_x(cam), room_height - camera_get_view_height(cam));
+//}
 
 // END -- Kepp view in room at all times

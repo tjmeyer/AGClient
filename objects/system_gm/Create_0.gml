@@ -1,13 +1,6 @@
 /// @description UI Elements and general gameplay handling while in a "player system"
 
-if(!instance_exists(menu_gm))
-{
-	menu_ref = instance_create_layer(0,0,"UI",menu_gm);
-}
-else
-{
-	menu_ref = instance_find(menu_gm, 0);
-}
+event_inherited();
 
 // Move to center of system
 var cam = view_get_camera(view_current);

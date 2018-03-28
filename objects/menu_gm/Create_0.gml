@@ -1,7 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
+ini_open("profile.ini");
+menu_left = ini_read_real("Preferences","menu_width",menu_left);
+drag_is_locked = ini_read_real("Preferences","drag_lock",false);
+if(menu_left >= menu_right)
+{
+	menu_left = menu_right - menu_min;	
+	ini_write_real("Preferences", "menu_width", menu_left);
+}
 
-drag_is_locked = false;
+ini_close();
+
 lock_btn = instance_create_layer(0,0,"UI", obj_menu_lock_button);
 lock_btn.sprite_index = sprt_lock;
 lock_btn.image_blend = c_white;
@@ -10,10 +19,12 @@ lock_btn.button_height = 25;
 lock_btn.gui_x = menu_left;
 lock_btn.gui_y = menu_bottom - lock_btn.button_height;
 lock_btn.alpha = 0;
-lock_btn.mouse_over_alpha = .8;
+lock_btn.mouse_over_alpha = .9;
 lock_btn.border_alpha = .5;
 lock_btn.border_enabled = false;	
+lock_btn.isLocked = drag_is_locked;
 
+// top to bottom button render. Just add in the order you want them to appear.
 button_list = ds_list_create();
 // home system
 var home_system_btn = instance_create_layer(0,0,"UI", obj_menu_to_home_system_button);
