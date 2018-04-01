@@ -25,7 +25,7 @@ if (async_load[? "type"] == network_type_data)
 				var star = data_map[? "obj_star"];
 				var star_inst = instance_create_layer(room_width / 2,
 														room_height / 2,
-														"Instances",
+														"Sun",
 														obj_sun);
 				star_inst.anomaly = int64(star[? "anomaly"]);
 				star_inst.radius = real(star[? "radius"]);
@@ -62,7 +62,7 @@ if (async_load[? "type"] == network_type_data)
 					var type = planetObj[? "type"];
 					
 					// set x any y coordinates based on parametric equation of a circle: x = r cos(t), y = r sin(t)
-					planet_inst.orbit_radius = planet_inst.distance * 100 + sprite_get_width(sprt_sun)/2; // 50 pixels / 1 AU ?
+					planet_inst.orbit_radius = auToPixel(planet_inst.distance) + sprite_get_width(sprt_sun)/2; // 100 pixels / 1 AU ?
 					var angle = planet_inst.progress * 2 * pi;
 					planet_inst.x = planet_inst.orbit_radius * cos(angle) + room_width / 2;
 					planet_inst.y = planet_inst.orbit_radius * sin(angle) + room_height / 2;

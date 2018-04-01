@@ -7,7 +7,9 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "e4840ac9-2d4c-4e5d-959e-f65cb862bc4a"
+        "e4840ac9-2d4c-4e5d-959e-f65cb862bc4a",
+        "8e4466f4-c812-4694-9aca-54830f3afedb",
+        "05b110cf-1dd1-45aa-8ee6-912a2d904f3e"
     ],
     "IsDnD": false,
     "layers": [
@@ -51,7 +53,35 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_7813A135","id": "e4840ac9-2d4c-4e5d-959e-f65cb862bc4a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7813A135","objId": "20289e58-63bd-4503-9bcd-376cf02dba2a","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 608,"y": 480}
+{"name": "inst_7813A135","id": "e4840ac9-2d4c-4e5d-959e-f65cb862bc4a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7813A135","objId": "20289e58-63bd-4503-9bcd-376cf02dba2a","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 608,"y": 480},
+{"name": "inst_4AE4495F","id": "8e4466f4-c812-4694-9aca-54830f3afedb","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4AE4495F","objId": "53e20aac-f344-43ad-a2bf-667a09806627","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 4704,"y": 3968},
+{"name": "inst_77C2E733","id": "05b110cf-1dd1-45aa-8ee6-912a2d904f3e","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_77C2E733","objId": "53e20aac-f344-43ad-a2bf-667a09806627","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 6048,"y": 3904}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Sun",
+            "id": "fcf9b0d3-17f8-4dc2-928e-8e9cac47e00f",
+            "depth": 200,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
             ],
             "layers": [
 
@@ -70,7 +100,7 @@
             "animationFPS": 0,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -113,12 +143,12 @@
     },
     "roomSettings":     {
         "id": "6cea3dc3-5824-464b-ab09-0185e8cac986",
-        "Height": 76800,
+        "Height": 7680,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 102400
+        "Width": 10240
     },
     "mvc": "1.0",
     "views": [

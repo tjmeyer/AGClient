@@ -71,20 +71,6 @@
             "varType": 2
         },
         {
-            "id": "c9c07951-3eb8-4168-aebe-8be6f9e7ea2f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "db_id",
-            "varType": 1
-        },
-        {
             "id": "1c47c6a3-3d13-4505-af21-6413d36cc55c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -180,6 +166,20 @@
             "resourceFilter": 1023,
             "value": "get_timer()",
             "varName": "update_time",
+            "varType": 4
+        },
+        {
+            "id": "2af9eb3c-0759-45cc-b2fe-558a3572c32c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "instance_find(obj_sun, 0)",
+            "varName": "orbiting_object",
             "varType": 4
         }
     ],

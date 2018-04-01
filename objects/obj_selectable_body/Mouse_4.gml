@@ -13,7 +13,7 @@ if((gm.selected_instance > -1 &&
 }
 else
 {
-	// remove selection is already selected
+	// remove selection, this is already selected
 	if(isSelected)
 	{
 		isSelected = false;

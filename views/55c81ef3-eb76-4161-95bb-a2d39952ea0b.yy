@@ -10,7 +10,8 @@
         "ce4ab8d1-ad7d-4aa1-ad1d-631fc5ca1c82",
         "a8cb4205-38b3-48e4-833a-80a5ea91b0ef",
         "c010d1a1-3ec2-4e45-a9b3-94d5a37b6f28",
-        "dddde7c2-ee21-47e9-9bc4-0f6f1b5d978c"
+        "dddde7c2-ee21-47e9-9bc4-0f6f1b5d978c",
+        "0ea8835e-61fc-41fa-9a8c-617c2ae3a979"
     ],
     "filterType": "GMObject",
     "folderName": "menu buttons",

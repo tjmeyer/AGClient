@@ -135,6 +135,48 @@
             "value": "True",
             "varName": "pulse_up",
             "varType": 3
+        },
+        {
+            "id": "801d2429-ce5e-49a8-930e-48a366204759",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "false",
+            "varName": "friend",
+            "varType": 3
+        },
+        {
+            "id": "9e90c9de-b229-4e93-803d-0451581cefa8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "owned",
+            "varType": 3
+        },
+        {
+            "id": "41e43355-54c6-4b70-bc2a-d0e3ef4ad444",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "db_id",
+            "varType": 0
         }
     ],
     "solid": false,

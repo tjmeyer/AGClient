@@ -5,7 +5,8 @@
     "name": "11ed14dc-2186-416d-92bf-6f967c48a24e",
     "children": [
         "579502b6-d116-4ef7-8e43-8bc944b3aef1",
-        "8900cf52-6a77-4849-8c5b-9625457c4116"
+        "8900cf52-6a77-4849-8c5b-9625457c4116",
+        "78a7772f-f149-4336-8d38-3d3f667ad76e"
     ],
     "filterType": "GMObject",
     "folderName": "planets, suns, etc",

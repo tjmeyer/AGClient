@@ -4,9 +4,11 @@ event_inherited();
 
 // Move to center of system
 var cam = view_get_camera(view_current);
+var view_width = camera_get_view_width(cam);
+var view_height = camera_get_view_height(cam);
 camera_set_view_pos(cam, 
-					room_width / 2  - camera_get_view_width(cam) / 2,
-					room_height / 2 - camera_get_view_height(cam) / 2);
+					room_width / 2  - view_width / 2,
+					room_height / 2 - view_height / 2);
 
 
 // Get initial bg ratio for step process
@@ -72,3 +74,6 @@ collapse_button.mouse_over_alpha = 1;
 collapse_button.text = plusOrMinusText;
 collapse_button.text_valign = fa_center;
 collapse_button.text_halign = fa_center;
+
+original_room_width = room_width;
+original_room_height = room_height;

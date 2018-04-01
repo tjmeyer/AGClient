@@ -44,5 +44,7 @@ draw_sprite_ext(sprt_anomaly, anomaly, room_width / 2, room_height / 2, 1, 1, 0,
 part_emitter_burst(ps, emit0, part0, emission_number);
 image_xscale = 1.5;
 image_yscale = 1.5;
+light.x = x;
+light.y = y;
 draw_self();
 event_inherited();
