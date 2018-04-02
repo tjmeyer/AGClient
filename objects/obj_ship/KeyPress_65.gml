@@ -1,5 +1,5 @@
 /// @description hold shortcut key for "attack"
-if(isSelected && owned)
+if(isSelected && isOwned)
 {
 	// toggle targeting mode
 	isTargeting = !isTargeting;

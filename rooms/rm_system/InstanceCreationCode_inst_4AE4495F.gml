@@ -1,0 +1,2 @@
+isOwned = true;
+isFriend = false;

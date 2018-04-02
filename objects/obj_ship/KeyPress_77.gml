@@ -1,5 +1,5 @@
 /// @description shortcut for moving ship
-if(isSelected && owned)
+if(isSelected && isOwned)
 {
 	// toggle targeting mode
 	isMoveSelecting = !isMoveSelecting;

@@ -147,7 +147,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "false",
-            "varName": "friend",
+            "varName": "isFriend",
             "varType": 3
         },
         {
@@ -161,7 +161,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "True",
-            "varName": "owned",
+            "varName": "isOwned",
             "varType": 3
         },
         {
@@ -176,6 +176,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "db_id",
+            "varType": 0
+        },
+        {
+            "id": "ecac8617-03f3-440c-bf6c-5306f8366d03",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "takeDamage",
             "varType": 0
         }
     ],

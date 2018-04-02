@@ -27,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "b8c1aa4c-1779-45bf-97d8-0d15eeeaa40f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -111,9 +111,37 @@
             "value": "0",
             "varName": "totalDistance",
             "varType": 0
+        },
+        {
+            "id": "4d068e25-60fa-4dcf-9129-78aa9193ff2f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "source_x",
+            "varType": 0
+        },
+        {
+            "id": "094f6599-ebeb-481e-94e5-30e52f342f2a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "source_y",
+            "varType": 0
         }
     ],
-    "solid": true,
+    "solid": false,
     "spriteId": "08b7f673-5247-46dc-9e08-cfedca3b494e",
     "visible": true
 }

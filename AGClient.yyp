@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "26129608-f5d1-4a45-ba05-09c0afab91c5",
+            "Value": {
+                "id": "c39818c3-7324-4b7c-b425-6a10ebc1298c",
+                "resourcePath": "views\\26129608-f5d1-4a45-ba05-09c0afab91c5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "267513b2-59db-4f68-8ac8-4b1be840edda",
             "Value": {
                 "id": "fb3ed1c1-f97a-4c2d-aa45-f70ae792a51f",
@@ -668,6 +676,14 @@
                 "id": "21e02bd1-4a2c-45ff-9344-7b69fc07331d",
                 "resourcePath": "sounds\\sound2\\sound2.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "70cba462-852b-4e3d-93db-f21325306b21",
+            "Value": {
+                "id": "9851af4a-a9bf-446a-9ad3-6e1d91c76666",
+                "resourcePath": "views\\70cba462-852b-4e3d-93db-f21325306b21.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1103,6 +1119,14 @@
             }
         },
         {
+            "Key": "b8c1aa4c-1779-45bf-97d8-0d15eeeaa40f",
+            "Value": {
+                "id": "0bcfa3dd-9b49-460e-98c0-370a2860219d",
+                "resourcePath": "objects\\obj_collide_with_weapon\\obj_collide_with_weapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ba06f1f2-fbec-4e9d-9f5e-80b9ff1f2cc6",
             "Value": {
                 "id": "0c02affd-faaf-4866-9fd9-f957bb505d60",
@@ -1140,6 +1164,14 @@
                 "id": "9f8a7003-3461-4842-8e81-62214b836e42",
                 "resourcePath": "objects\\obj_menu_to_home_system_button\\obj_menu_to_home_system_button.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c03665c3-f924-4e66-a8bc-7fe587e2a425",
+            "Value": {
+                "id": "d47464e6-5e0f-49a3-b4bb-457d67e44e4a",
+                "resourcePath": "views\\c03665c3-f924-4e66-a8bc-7fe587e2a425.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

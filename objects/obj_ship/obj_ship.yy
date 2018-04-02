@@ -160,7 +160,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "10000",
             "varName": "shields",
             "varType": 0
         },
@@ -174,7 +174,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "5000",
             "varName": "hp",
             "varType": 0
         },
@@ -303,9 +303,37 @@
             "value": "100",
             "varName": "timeToArrival",
             "varType": 0
+        },
+        {
+            "id": "8b4b5ce6-2775-4eca-ad4a-4bb830bba9c9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5000",
+            "varName": "maxHp",
+            "varType": 0
+        },
+        {
+            "id": "df1cf2c6-e198-406f-93b5-ae3ae7361057",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10000",
+            "varName": "maxShields",
+            "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "12a1d43f-bb13-41d9-b72c-6d9f534201e3",
+    "spriteId": "c9273fa8-5e3d-4220-853d-f866bb4b910f",
     "visible": true
 }
